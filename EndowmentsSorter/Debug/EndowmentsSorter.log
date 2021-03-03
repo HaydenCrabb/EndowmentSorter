@@ -1,0 +1,81 @@
+﻿  Attribute.cpp
+  DoubleyLinkedList.cpp
+  Endowment.cpp
+  EndowmentsSorter.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2390,23): warning C4244: 'argument': conversion from 'wchar_t' to 'const _Elem', possible loss of data
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2401): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2401): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2381): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2381): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Users\hcrabb\Documents\EndowmentsSorter\EndowmentsSorter\EndowmentsSorter.cpp(218): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\hcrabb\Documents\EndowmentsSorter\EndowmentsSorter\EndowmentsSorter.cpp(218): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+  guts.cpp
+  Requirement.cpp
+  Student.cpp
+  Generating Code...
+guts.obj : error LNK2005: "void __cdecl clearMemory(void)" (?clearMemory@@YAXXZ) already defined in EndowmentsSorter.obj
+guts.obj : error LNK2005: "void __cdecl csvParser(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *,int)" (?csvParser@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAV12@H@Z) already defined in EndowmentsSorter.obj
+guts.obj : error LNK2005: "void __cdecl inputEndowmentsData(class std::basic_ifstream<char,struct std::char_traits<char> > &,bool)" (?inputEndowmentsData@@YAXAAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@_N@Z) already defined in EndowmentsSorter.obj
+guts.obj : error LNK2005: "int __cdecl openFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,bool,bool)" (?openFile@@YAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N1@Z) already defined in EndowmentsSorter.obj
+guts.obj : error LNK2005: "class DoubleyLinkedList<class Endowment> * all_endowments" (?all_endowments@@3PAV?$DoubleyLinkedList@VEndowment@@@@A) already defined in EndowmentsSorter.obj
+guts.obj : error LNK2005: "class DoubleyLinkedList<class Student> * all_students" (?all_students@@3PAV?$DoubleyLinkedList@VStudent@@@@A) already defined in EndowmentsSorter.obj
+guts.obj : error LNK2005: "class DoubleyLinkedList<class Attribute> * all_attributes" (?all_attributes@@3PAV?$DoubleyLinkedList@VAttribute@@@@A) already defined in EndowmentsSorter.obj
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: __thiscall Endowment::Endowment(void)" (??0Endowment@@QAE@XZ) referenced in function "void __cdecl inputEndowmentsData(class std::basic_ifstream<char,struct std::char_traits<char> > &,bool)" (?inputEndowmentsData@@YAXAAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@_N@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: __thiscall Endowment::Endowment(void)" (??0Endowment@@QAE@XZ)
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: __thiscall Endowment::~Endowment(void)" (??1Endowment@@QAE@XZ) referenced in function "void __cdecl inputEndowmentsData(class std::basic_ifstream<char,struct std::char_traits<char> > &,bool)" (?inputEndowmentsData@@YAXAAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@_N@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: __thiscall Endowment::~Endowment(void)" (??1Endowment@@QAE@XZ)
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: __thiscall DoubleyLinkedList<class Attribute>::DoubleyLinkedList<class Attribute>(void)" (??0?$DoubleyLinkedList@VAttribute@@@@QAE@XZ) referenced in function "int __cdecl openFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,bool,bool)" (?openFile@@YAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N1@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: __thiscall DoubleyLinkedList<class Attribute>::DoubleyLinkedList<class Attribute>(void)" (??0?$DoubleyLinkedList@VAttribute@@@@QAE@XZ)
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: __thiscall DoubleyLinkedList<class Attribute>::~DoubleyLinkedList<class Attribute>(void)" (??1?$DoubleyLinkedList@VAttribute@@@@QAE@XZ) referenced in function "public: void * __thiscall DoubleyLinkedList<class Attribute>::`vector deleting destructor'(unsigned int)" (??_E?$DoubleyLinkedList@VAttribute@@@@QAEPAXI@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: __thiscall DoubleyLinkedList<class Attribute>::~DoubleyLinkedList<class Attribute>(void)" (??1?$DoubleyLinkedList@VAttribute@@@@QAE@XZ)
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: void __thiscall DoubleyLinkedList<class Attribute>::append(class Attribute)" (?append@?$DoubleyLinkedList@VAttribute@@@@QAEXVAttribute@@@Z) referenced in function "void __cdecl inputEndowmentsData(class std::basic_ifstream<char,struct std::char_traits<char> > &,bool)" (?inputEndowmentsData@@YAXAAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@_N@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: void __thiscall DoubleyLinkedList<class Attribute>::append(class Attribute)" (?append@?$DoubleyLinkedList@VAttribute@@@@QAEXVAttribute@@@Z)
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: void __thiscall DoubleyLinkedList<class Attribute>::getNextNode(class DLLNode<class Attribute> * &)" (?getNextNode@?$DoubleyLinkedList@VAttribute@@@@QAEXAAPAV?$DLLNode@VAttribute@@@@@Z) referenced in function "void __cdecl inputEndowmentsData(class std::basic_ifstream<char,struct std::char_traits<char> > &,bool)" (?inputEndowmentsData@@YAXAAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@_N@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: void __thiscall DoubleyLinkedList<class Attribute>::getNextNode(class DLLNode<class Attribute> * &)" (?getNextNode@?$DoubleyLinkedList@VAttribute@@@@QAEXAAPAV?$DLLNode@VAttribute@@@@@Z)
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: void __thiscall DoubleyLinkedList<struct info>::append(struct info)" (?append@?$DoubleyLinkedList@Uinfo@@@@QAEXUinfo@@@Z) referenced in function "void __cdecl inputEndowmentsData(class std::basic_ifstream<char,struct std::char_traits<char> > &,bool)" (?inputEndowmentsData@@YAXAAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@_N@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: void __thiscall DoubleyLinkedList<struct info>::append(struct info)" (?append@?$DoubleyLinkedList@Uinfo@@@@QAEXUinfo@@@Z)
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: __thiscall DoubleyLinkedList<class Endowment>::DoubleyLinkedList<class Endowment>(void)" (??0?$DoubleyLinkedList@VEndowment@@@@QAE@XZ) referenced in function "int __cdecl openFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,bool,bool)" (?openFile@@YAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N1@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: __thiscall DoubleyLinkedList<class Endowment>::DoubleyLinkedList<class Endowment>(void)" (??0?$DoubleyLinkedList@VEndowment@@@@QAE@XZ)
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: __thiscall DoubleyLinkedList<class Endowment>::~DoubleyLinkedList<class Endowment>(void)" (??1?$DoubleyLinkedList@VEndowment@@@@QAE@XZ) referenced in function "public: void * __thiscall DoubleyLinkedList<class Endowment>::`vector deleting destructor'(unsigned int)" (??_E?$DoubleyLinkedList@VEndowment@@@@QAEPAXI@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: __thiscall DoubleyLinkedList<class Endowment>::~DoubleyLinkedList<class Endowment>(void)" (??1?$DoubleyLinkedList@VEndowment@@@@QAE@XZ)
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: void __thiscall DoubleyLinkedList<class Endowment>::append(class Endowment)" (?append@?$DoubleyLinkedList@VEndowment@@@@QAEXVEndowment@@@Z) referenced in function "void __cdecl inputEndowmentsData(class std::basic_ifstream<char,struct std::char_traits<char> > &,bool)" (?inputEndowmentsData@@YAXAAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@_N@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: void __thiscall DoubleyLinkedList<class Endowment>::append(class Endowment)" (?append@?$DoubleyLinkedList@VEndowment@@@@QAEXVEndowment@@@Z)
+EndowmentsSorter.obj : error LNK2019: unresolved external symbol "public: __thiscall DoubleyLinkedList<class Student>::~DoubleyLinkedList<class Student>(void)" (??1?$DoubleyLinkedList@VStudent@@@@QAE@XZ) referenced in function "public: void * __thiscall DoubleyLinkedList<class Student>::`scalar deleting destructor'(unsigned int)" (??_G?$DoubleyLinkedList@VStudent@@@@QAEPAXI@Z)
+guts.obj : error LNK2001: unresolved external symbol "public: __thiscall DoubleyLinkedList<class Student>::~DoubleyLinkedList<class Student>(void)" (??1?$DoubleyLinkedList@VStudent@@@@QAE@XZ)
+Student.obj : error LNK2019: unresolved external symbol "public: __thiscall DoubleyLinkedList<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >::DoubleyLinkedList<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >(void)" (??0?$DoubleyLinkedList@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@QAE@XZ) referenced in function "public: __thiscall Student::Student(void)" (??0Student@@QAE@XZ)
+Student.obj : error LNK2019: unresolved external symbol "public: __thiscall DoubleyLinkedList<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >::~DoubleyLinkedList<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >(void)" (??1?$DoubleyLinkedList@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@QAE@XZ) referenced in function "public: void * __thiscall DoubleyLinkedList<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >::`scalar deleting destructor'(unsigned int)" (??_G?$DoubleyLinkedList@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@QAEPAXI@Z)
+Student.obj : error LNK2019: unresolved external symbol "public: __thiscall DoubleyLinkedList<struct Solution>::DoubleyLinkedList<struct Solution>(void)" (??0?$DoubleyLinkedList@USolution@@@@QAE@XZ) referenced in function "public: __thiscall Student::Student(void)" (??0Student@@QAE@XZ)
+Student.obj : error LNK2019: unresolved external symbol "public: __thiscall DoubleyLinkedList<struct Solution>::~DoubleyLinkedList<struct Solution>(void)" (??1?$DoubleyLinkedList@USolution@@@@QAE@XZ) referenced in function "public: void * __thiscall DoubleyLinkedList<struct Solution>::`scalar deleting destructor'(unsigned int)" (??_G?$DoubleyLinkedList@USolution@@@@QAEPAXI@Z)
+C:\Users\hcrabb\Documents\EndowmentsSorter\Debug\EndowmentsSorter.exe : fatal error LNK1120: 15 unresolved externals
